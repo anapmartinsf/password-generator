@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  color: #333;
+    font-size: .9rem;
+}
+
+body {
+  min-height: 100vh; 
+  background: linear-gradient(180deg, #6e6ce0 0%, #9414a5 100%);
+}
+
+#main-container {
+  max-width: 56rem; 
+  min-height: 85vh; 
+  margin: 2rem auto;
+  display: flex;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+#banner-container {
+  background: url(../img/woman-using-laptop.jpg);
+  background-size: cover; 
+  background-position: center;
+  width: 50%; 
+}
+
+#banner-layer {
+  background-color: rgb(25, 11, 122, 0.7);
+  height: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner-container h2 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+#form-container {
+  background-color: #fdfdfd;
+  padding: 5rem 2rem;
+  width: 50%;
+}
+
+#form-container h1 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+#form-container p {
+  text-align: center;
+  color: #aaa;
+  font-size: .8rem;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+
+.form-control input {
+  margin-top: .4rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0.6rem 0.2rem;
+}
+
+#open-generate-password {
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+  font-size: .9rem;
+}
+
+#open-generate-password:hover {
+ color: #6e6ce0;
+}
+
+#password-generator {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 9px;
+  margin-bottom: 1.2rem;
+}
+
+#password-generator .form-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#password-generator p {
+  font-weight: bold;
+  color: #333;
+}
+
+#password-generator input[type="number"] {
+  max-width: 3rem;
+  text-align: right;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+}
+
+#password-generator button {
+  padding: .4rem;
+  width: 50%;
+}
+
+#generated-password {
+  border: 1px solid #6e6ce0;
+  border-radius: 9px;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#generated-password p {
+  color:#6e6ce0;
+  margin-bottom: .5rem;
+}
+
+#generated-password button {
+  color:#6e6ce0;
+  border-radius: 9px;
+  padding: .3rem;
+  border: 1px solid #6e6ce0;
+  width: 30%;
+  margin-top: .5rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#generated-password button:hover {
+  opacity: .8;
+}
+
+.form input[type="submit"] {
+  padding: .5rem;
+  font-size: 1.2rem;
+}
+
+.form input[type="submit"],
+#password-generator button {
+background-color: #6e6ce0;
+border: 1px solid #ccc;
+color: #fff;
+cursor: pointer;
+transition: .3s;
+font-weight: bold;
+border-radius: 9px;
+}
+
+.form input[type="submit"]:hover,
+#password-generator button:hover {
+  opacity: .9;
+}
+
+:focus {
+  border-radius: 9px;
+  outline: 2px solid #6e6ce0;
+}
+
+.hide {
+  display: none;
+}
+
+@media(max-width: 450px) {
+  #banner-container {
+    display: none;
+  }
+
+  #main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #form-container {
+    width: 20rem;
+  }
+
+  #length {
+    text-align: center !important;
+  }
+}
+
